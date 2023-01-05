@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CanioniDev</title>
+
+</head>
+
+<body>
+    <div id="top"></div>
+    <!-- NAVBAR -->
+    <nav id="navBar" class="flexCenter">
+        <div id="brandContainer" class="flexCenter">
+            <a href="#top">
+                <h1 id="brandName">CanioniDev</h1>
+            </a>
+        </div>
+        <div id="linksContainer" class="flexCenter">
+            <a href="#presentationSection" class="navLink flexCenter">
+                <p class="textLink">presentation</p>
+                <img src="/Assest/presentationLinkImg.webp" alt="" class="navLinkImg">
+                <div class="navHoverEffect"></div>
+            </a>
+            <a href="#workSection" class="navLink flexCenter" id="workLink">
+                <p class="textLink">my work</p>
+                <img src="/Assest/workLinkImg.webp" alt="" class="navLinkImg">
+                <div class="navHoverEffect"></div>
+            </a>
+            <a href="#contactSection" class="navLink flexCenter" id="contactLink">
+                <p class="textLink">contact</p>
+                <img src="/Assest/contactLinkImg.webp" alt="" class="navLinkImg">
+                <div class="navHoverEffect"></div>
+            </a>
+            <a href="#cvSection" class="navLink flexCenter" id="cvLink">
+                <p class="textLink">cv</p>
+                <img src="/Assest/cvLinkImg.webp" alt="" class="navLinkImg">
+                <div class="navHoverEffect"></div>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="homeSection" class="sectionContainer flexCenter">
+        <!-- ANIMATED LOGO BACKGROUND -->
+        <div class="homeBackground">
+            <div id="logoHtml" class="logoContainer">
+                <img class="homeBackgroundImg" src="/Assest/LogoHtmlPic.webp" alt="">
+            </div>
+            <div id="logoCss" class="logoContainer">
+                <img class="homeBackgroundImg" src="/Assest/LogoCssPic.png" alt="">
+            </div>
+            <div id="logoJs" class="logoContainer">
+                <img class="homeBackgroundImg" src="/Assest/LogoJsPic.webp" alt="">
+            </div>
+            <div id="logoPhp" class="logoContainer">
+                <img class="homeBackgroundImg" src="/Assest/LogoPhpPic.png" alt="">
+            </div>
+            <div id="logoMySql" class="logoContainer">
+                <img class="homeBackgroundImg" src="/Assest/LogoMySqlPic.webp" alt="">
+            </div>
+            <div id="logoBootstrap" class="logoContainer">
+                <img class="homeBackgroundImg" src="/Assest/LogoBootstrapPic.png" alt="">
+            </div>
+            <div id="logoWordPress" class="logoContainer">
+                <img class="homeBackgroundImg" src="/Assest/LogoWordPressPic.png" alt="">
+            </div>
+        </div>
+
+        <!-- HOME FRONT -->
+        <div id="homeFrontContainer" class="flexCenter">
+            <div class="homeFrontText">
+                <div id="lineOne">
+                    <p>Hi, I am</p>
+                </div>
+                <div id="lineTwo">
+                    <p>Stéphan Canioni,</p>
+                </div>
+                <div id="lineThree">
+                    <p>web & web mobile developper.</p>
+                </div>
+            </div>
+            <div id="homeImgContainer">
+                <img id="homeFrontImg" src="/Assest/homeFrontImg.webp" alt="">
+            </div>
+        </div>
+        <div id="scrollIconContainer">
+            <img id="scrollImg" src="/Assest/scrollDownImg.png" alt="">
+        </div>
+    </section>
+
+    <!-- PRESENTATION SECTION -->
+    <section id="presentationSection" class="sectionContainer flexCenter">
+        <div class="mirrorContainer">
+            <h2 id="mirroredPresentation" class="mirroredTitle">presentation</h2>
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="/Assest/contactLinkImg.webp">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="/Assest/cvLinkImg.webp">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="/Assest/homeFrontImg.webp">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div></div>
+    </section>
+
+    <!-- WORK SECTION -->
+    <section id="workSection" class="sectionContainer flexCenter">
+        <div class="mirrorContainer">
+            <h2 id="mirroredWork" class="mirroredTitle">my work</h2>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contactSection" class="sectionContainer flexCenter">
+        <div class="mirrorContainer">
+            <h2 id="mirroredContact" class="mirroredTitle">contact</h2>
+        </div>
+        <form action="">
+            <div>
+                <label for=" FormName">Nom</label>
+                <input class="FormName" type="text">
+            </div>
+            <div>
+                <label for="FormEmail">Email</label>
+                <input class="FormEmail" type="text">
+            </div>
+            <div>
+                <label for="FormMessage">Message</label>
+                <textarea class="FormMessage" name="FormMessage" cols="30" rows="10"></textarea>
+            </div>
+        </form>
+    </section>
+
+    <!-- CV SECTION -->
+    <section id="cvSection" class="sectionContainer flexCenter">
+        <div class="mirrorContainer">
+            <h2 id="mirroredCv" class="mirroredTitle">download my cv</h2>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>
