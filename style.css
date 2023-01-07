@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Price";
-    src: url(/Assest/pricedown\ bl.otf);
+    src: url(/Assest/Fonts/pricedown\ bl.otf);
 }
 
 @font-face {
     font-family: "Cake";
-    src: url(/Assest/Cream\ Cake.otf);
+    src: url(/Assest/Fonts/Cream\ Cake.otf);
 }
 
 /* GENERAL STYLE */
@@ -1044,12 +1044,13 @@ a {
     display: none;
     width: 100%;
     height: 100%;
-    /* background-color: yellow; */
 }
 
 .slideTitle {
     position: absolute;
-    color: #801111;
+    color: black;
+    width: 100%;
+    text-align: center;
 }
 
 .SlideContainer {
@@ -1065,7 +1066,7 @@ a {
 .frontSlide, .backSlide  {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit:scale-down;
 }
 .frontSlide{
     animation: frontSlideAnim 15s infinite;
@@ -1109,13 +1110,13 @@ a {
 }
 
 .slideText {
-    color: #972424;
-    font-size: 15px;
-    padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    font-size: 1.5vw;
     width: 100%;
+    bottom: 0;
     text-align: center;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Next & previous buttons */
