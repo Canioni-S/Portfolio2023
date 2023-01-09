@@ -1,10 +1,10 @@
 <?php
 if (!empty($_POST)) {
-    $to = 'psycylinemontreal@gmail.com';
-    $subject = 'Demande de prestation, ' . $_POST['prestation'];
+    $to = 'stephan.canioni@outlook.fr';
+    $subject = 'Email via Portfolio';
     $message = "<html>
                     <h2>Email reçu de la part de</h2><br>
-                    <h3>" . $_POST['firstname'] . " " . $_POST['lastname'] . "</h3><br>
+                    <h3>" . $_POST['name'] . "</h3><br>
                     <p>Contenu du message :<br>" . $_POST['description'] . "</p>";
     $headers[] = 'MIME-Version: 1.0';
     $headers[] = 'Content-type: text/html; charset=utf-8';
@@ -13,9 +13,8 @@ if (!empty($_POST)) {
     $retour = mail($to, $subject, $message, implode("\r\n", $headers));
 
     if ($retour)
-        $_SESSION['flash']['success'] = 'Votre message à bien été envoyé';
-    header('Location: contact.php');
-    exit();
+    $message = "your email has been sent";
+    echo "<script type='text/javascript'>alert('$message');</script>";
 }
 ?>
 <!DOCTYPE html>
@@ -56,8 +55,8 @@ if (!empty($_POST)) {
                 <img src="/Assest/NavbarImg/contactLinkImg.webp" alt="" class="navLinkImg">
                 <div class="navHoverEffect"></div>
             </a>
-            <a href="#cvSection" class="navLink flexCenter" id="cvLink">
-                <p class="textLink">cv</p>
+            <a href="/Assest/New CV.pdf" class="navLink flexCenter" id="cvLink" download="Canioni-Stéphan-CV" onclick="return confirm('Confirm download Canioni-Stéphan-CV?');">
+                <p class="textLink">donwload cv</p>
                 <img src="/Assest/NavbarImg/cvLinkImg.webp" alt="" class="navLinkImg">
                 <div class="navHoverEffect"></div>
             </a>
@@ -234,46 +233,34 @@ if (!empty($_POST)) {
             <h2 id="mirroredContact" class="mirroredTitle">contact</h2>
         </div>
 
-        <form class="form" method="POST">
-            <h1>Formulez votre demande</h1>
+        <div id="formContainer" class="flexCenter">
+            <form class="form flexCenter" method="POST">
+                <h3 id="formTitle">Contactez moi par email</h3>
 
-            <div class="formItem">
-                <label for="prestation">Prestation</label>
-                <select id="prestation" name="prestation" class="formInput" required>
-                    <option value="">Veuillez selectionner une prestation</option>
-                    <option value="reportage">Reportage</option>
-                    <option value="authorPic">Photographie d'Auteur</option>
-                    <option value="corporate">Corporate</option>
-                    <option value="socialPic">Photographie Sociale</option>
-                    <option value="autre">Autre (decrivez votre demande en bas du formulaire)</option>
-                </select>
-            </div>
+                <div class="formItem">
+                    <label for="lastname">Nom</label>
+                    <input type="text" name="name" class="formInput" placeholder="e.g. john doe" required>
+                </div>
 
-            <div class="formItem">
-                <label for="lastname">Nom</label>
-                <input type="text" name="lastname" class="formInput" required>
-            </div>
+                <div class="formItem">
+                    <label for="email">Adresse email</label>
+                    <input type="email" name="email" class="formInput" placeholder="email@domain.com" required>
+                </div>
 
-            <div class="formItem">
-                <label for="firstname">Prénom</label>
-                <input type="text" name="firstname" class="formInput" required>
-            </div>
+                <div class="formItem">
+                    <label for="description">Votre message</label>
+                    <textarea rows="5" cols="50" name="description" class="formInput" placeholder="type here" required></textarea>
+                </div>
 
-            <div class="formItem">
-                <label for="email">Adresse email sur laquelle vous shouaitez être contacté</label>
-                <input type="email" name="email" class="formInput" required>
-            </div>
+                <button type="submit" class="formBtn">Envoyer le message</button>
 
-            <div class="formItem">
-                <label for="description">Description de la collection</label>
-                <textarea rows="5" cols="50" name="description" class="formInput"></textarea>
-            </div>
+            </form>
+        </div>
 
-            <button type="submit" class="formBtn">Envoyer la demande</button>
+    </section>
 
-        </form>
-
-        <div class="contactsContainer">
+    <footer>
+        <!-- <div class="contactsContainer">
             <div id="contactEmail" class="contactLink">
                 <img src="/Assest/ContactIcons/002-email.png" alt="">
                 <a href="mailto:stephan.canioni@outlook.fr" class="contactText">stephan.canioni@outlook.fr</a>
@@ -290,10 +277,7 @@ if (!empty($_POST)) {
                 <img src="/Assest/ContactIcons/004-github.png" alt="">
                 <a class="contactText" href="https://github.com/Canioni-S">Mon GitHub</a>
             </div>
-        </div>
-    </section>
-
-    <footer>
+        </div> -->
 
     </footer>
     <script src="/script.js"></script>

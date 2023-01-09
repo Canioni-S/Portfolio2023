@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Price";
-    src: url(/Assest/Fonts/pricedown\ bl.otf);
+    font-family: "Mermaid";
+    src: url(/Assest/Fonts/Mermaid1001.ttf);
 }
 
 @font-face {
@@ -16,6 +16,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .sectionContainer {
@@ -54,6 +55,7 @@ a {
 
 .mirroredTitle {
     padding: 0.5em;
+    font-family: "Mermaid";
     font-size: calc(30px + 1.5vw);
     text-transform: uppercase;
     color: #000;
@@ -63,7 +65,7 @@ a {
     display: flex;
     transform: rotateX(180deg);
     color: transparent;
-    text-shadow: 1px 20px 5px rgba(255, 68, 0, 0.4);
+    text-shadow: 0px 30px 10px rgba(255, 68, 0, 0.2);
 }
 
 #mirroredPresentation::after {
@@ -117,6 +119,7 @@ a {
 .navLink {
     width: 25%;
     height: 100%;
+    font-family: "Mermaid";
     font-size: calc(15px + 1vw);
     font-weight: 600;
     text-transform: uppercase;
@@ -1247,9 +1250,69 @@ a {
 }
 
 /* CONTACT SECTION */
+
 #contactSection {
     background-color: whitesmoke;
 }
+
+#formContainer {
+    width: 60%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    gap: 1em;
+    width: 50%;
+}
+
+#formTitle{
+    font-size: calc(15px + 1.5vw);
+    padding-bottom: 1em;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1vw;
+    width: 100%;
+    gap: 0.25em;
+    transition: 0.5s;
+}
+
+.formItem:hover {
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.formInput {
+    padding: 0.5em;
+    border: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.formItem:hover .formInput {
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.formBtn{
+    cursor: pointer;
+    padding: 0.5em;
+    border: none;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    font-size: 1.1em;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+.formBtn:hover{
+    padding: 1em;
+    font-size: 1.2em;
+}
+
 
 .contactsContainer {
     display: flex;
@@ -1261,14 +1324,15 @@ a {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.contactLink{
+.contactLink {
     display: flex;
     gap: 1em;
 }
-.contactLink img{
+
+.contactLink img {
     width: calc(30px + 1vw);
-    /* height: 35px; */
 }
-.contactText{
+
+.contactText {
     font-size: calc(15px + 1.5vw);
 }
