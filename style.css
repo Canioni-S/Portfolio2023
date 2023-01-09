@@ -20,7 +20,9 @@ html {
 
 .sectionContainer {
     position: relative;
-    height: 100vh;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .flexCenter {
@@ -52,7 +54,7 @@ a {
 
 .mirroredTitle {
     padding: 0.5em;
-    font-size: 3vw;
+    font-size: calc(30px + 1.5vw);
     text-transform: uppercase;
     color: #000;
 }
@@ -92,7 +94,7 @@ a {
 
 /* BRAND NAME STYLE MODIF */
 #brandContainer {
-    width: 30%;
+    width: 20%;
     height: 100%;
     font-family: "Cake";
     background-color: whitesmoke;
@@ -107,7 +109,7 @@ a {
 /* RIGHT PART OF THE NAVBAR */
 #linksContainer {
     position: relative;
-    width: 70%;
+    width: 80%;
     height: 100%;
     background-color: rgb(24, 24, 24);
 }
@@ -115,7 +117,7 @@ a {
 .navLink {
     width: 25%;
     height: 100%;
-    font-size: 1.6vw;
+    font-size: calc(15px + 1vw);
     font-weight: 600;
     text-transform: uppercase;
     color: whitesmoke;
@@ -154,10 +156,7 @@ a {
 /* HOME SECTION  */
 #homeSection {
     position: relative;
-    /* top: 15vh; */
-    flex-direction: column;
     transition: 0.4s;
-    height: 85vh;
 }
 
 /* BACKGROUND CREATION AND ANIMATION */
@@ -980,17 +979,17 @@ a {
 }
 
 #lineOne {
-    font-size: 2.5vw;
+    font-size: calc(15px + 2.5vw);
     color: whitesmoke;
 }
 
 #lineTwo {
-    font-size: 5vw;
+    font-size: calc(15px + 5vw);
     color: whitesmoke;
 }
 
 #lineThree {
-    font-size: 3.5vw;
+    font-size: calc(15px + 3.5vw);
     color: orangered;
 }
 
@@ -1027,9 +1026,10 @@ a {
 }
 
 /* PRESENTATION SECTION */
+
 #presentationSection {
-    flex-direction: column;
     background-color: whitesmoke;
+    height: 100vh;
 }
 
 /* Slideshow container */
@@ -1063,48 +1063,60 @@ a {
     height: 100%;
 }
 
-.frontSlide, .backSlide  {
+.frontSlide, .backSlide {
     width: 100%;
     height: 100%;
-    object-fit:scale-down;
+    object-fit: cover;
 }
-.frontSlide{
+
+.frontSlide {
     animation: frontSlideAnim 15s infinite;
 }
+
 @keyframes frontSlideAnim {
-    0%{
+    0% {
         opacity: 0.5;
     }
-    20%{
+
+    20% {
         opacity: 0.5;
     }
-    50%{
+
+    50% {
         opacity: 0;
     }
-    80%{
+
+    80% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 0.5;
     }
 }
-.backSlide{
+
+.backSlide {
     animation: backSlideAnim 15s infinite;
 }
+
 @keyframes backSlideAnim {
-    0%{
+    0% {
         opacity: 0;
     }
-    20%{
+
+    20% {
         opacity: 0;
     }
-    50%{
+
+    50% {
         opacity: 0.5;
     }
-    80%{
+
+    80% {
         opacity: 0.5;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
@@ -1176,4 +1188,87 @@ a {
     to {
         opacity: 1
     }
+}
+
+/* WORK SECTION */
+
+#workSection {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.flipCardsContainer {
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 1em;
+}
+
+.flipCard {
+    background-color: transparent;
+    width: 25%;
+    min-width: 15em;
+    height: 30vh;
+    perspective: 1000px;
+}
+
+.flipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flipCard:hover .flipCardInner {
+    transform: rotateY(180deg);
+}
+
+.flipCardFront, .flipCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.flipCardFront {
+    width: 100%;
+}
+
+.flipCardBack {
+    transform: rotateY(180deg);
+}
+
+.workLinkImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CONTACT SECTION */
+#contactSection {
+    background-color: whitesmoke;
+}
+
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contactLink{
+    display: flex;
+    gap: 1em;
+}
+.contactLink img{
+    width: calc(30px + 1vw);
+    /* height: 35px; */
+}
+.contactText{
+    font-size: calc(15px + 1.5vw);
 }
