@@ -13,7 +13,7 @@ if (!empty($_POST)) {
     $retour = mail($to, $subject, $message, implode("\r\n", $headers));
 
     if ($retour)
-    $message = "your email has been sent";
+        $message = "your email has been sent";
     echo "<script type='text/javascript'>alert('$message');</script>";
 }
 ?>
@@ -24,7 +24,7 @@ if (!empty($_POST)) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CanioniDev</title>
 
@@ -42,22 +42,22 @@ if (!empty($_POST)) {
         <div id="linksContainer" class="flexCenter">
             <a href="#presentationSection" class="navLink flexCenter">
                 <p class="textLink">presentation</p>
-                <img src="/Assest/NavbarImg/presentationLinkImg.webp" alt="" class="navLinkImg">
+                <img src="../Assest/NavbarImg/presentationLinkImg.webp" alt="" class="navLinkImg">
                 <div class="navHoverEffect"></div>
             </a>
             <a href="#workSection" class="navLink flexCenter" id="workLink">
                 <p class="textLink">my work</p>
-                <img src="/Assest/NavbarImg/workLinkImg.webp" alt="" class="navLinkImg">
+                <img src="../Assest/NavbarImg/workLinkImg.webp" alt="" class="navLinkImg">
                 <div class="navHoverEffect"></div>
             </a>
             <a href="#contactSection" class="navLink flexCenter" id="contactLink">
                 <p class="textLink">contact</p>
-                <img src="/Assest/NavbarImg/contactLinkImg.webp" alt="" class="navLinkImg">
+                <img src="../Assest/NavbarImg/contactLinkImg.webp" alt="" class="navLinkImg">
                 <div class="navHoverEffect"></div>
             </a>
             <a href="/Assest/New CV.pdf" class="navLink flexCenter" id="cvLink" download="Canioni-Stéphan-CV" onclick="return confirm('Confirm download Canioni-Stéphan-CV?');">
                 <p class="textLink">donwload cv</p>
-                <img src="/Assest/NavbarImg/cvLinkImg.webp" alt="" class="navLinkImg">
+                <img src="../Assest/NavbarImg/cvLinkImg.webp" alt="" class="navLinkImg">
                 <div class="navHoverEffect"></div>
             </a>
         </div>
@@ -68,25 +68,25 @@ if (!empty($_POST)) {
         <!-- ANIMATED LOGO BACKGROUND -->
         <div class="homeBackground">
             <div id="logoHtml" class="logoContainer">
-                <img class="homeBackgroundImg" src="/Assest/LogoImg/LogoHtmlPic.webp" alt="">
+                <img class="homeBackgroundImg" src="../Assest/LogoImg/LogoHtmlPic.webp" alt="">
             </div>
             <div id="logoCss" class="logoContainer">
-                <img class="homeBackgroundImg" src="/Assest/LogoImg/LogoCssPic.png" alt="">
+                <img class="homeBackgroundImg" src="../Assest/LogoImg/LogoCssPic.png" alt="">
             </div>
             <div id="logoJs" class="logoContainer">
-                <img class="homeBackgroundImg" src="/Assest/LogoImg/LogoJsPic.webp" alt="">
+                <img class="homeBackgroundImg" src="../Assest/LogoImg/LogoJsPic.webp" alt="">
             </div>
             <div id="logoPhp" class="logoContainer">
-                <img class="homeBackgroundImg" src="/Assest/LogoImg/LogoPhpPic.png" alt="">
+                <img class="homeBackgroundImg" src="../Assest/LogoImg/LogoPhpPic.png" alt="">
             </div>
             <div id="logoMySql" class="logoContainer">
-                <img class="homeBackgroundImg" src="/Assest/LogoImg/LogoMySqlPic.webp" alt="">
+                <img class="homeBackgroundImg" src="../Assest/LogoImg/LogoMySqlPic.webp" alt="">
             </div>
             <div id="logoBootstrap" class="logoContainer">
-                <img class="homeBackgroundImg" src="/Assest/LogoImg/LogoBootstrapPic.png" alt="">
+                <img class="homeBackgroundImg" src="../Assest/LogoImg/LogoBootstrapPic.png" alt="">
             </div>
             <div id="logoWordPress" class="logoContainer">
-                <img class="homeBackgroundImg" src="/Assest/LogoImg/LogoWordPressPic.png" alt="">
+                <img class="homeBackgroundImg" src="../Assest/LogoImg/LogoWordPressPic.png" alt="">
             </div>
         </div>
 
@@ -104,11 +104,11 @@ if (!empty($_POST)) {
                 </div>
             </div>
             <div id="homeImgContainer">
-                <img id="homeFrontImg" src="/Assest/HomeSectionImg/homeFrontImg.webp" alt="">
+                <img id="homeFrontImg" src="../Assest/HomeSectionImg/homeFrontImg.webp" alt="">
             </div>
         </div>
         <div id="scrollIconContainer">
-            <img id="scrollImg" src="/Assest/HomeSectionImg/scrollDownImg.png" alt="">
+            <img id="scrollImg" src="../Assest/HomeSectionImg/scrollDownImg.png" alt="">
         </div>
     </section>
 
@@ -121,51 +121,53 @@ if (!empty($_POST)) {
         <div class="slideshowContainer">
 
             <div class="mySlides fade">
-                <h3 class="slideTitle">Lorem ipsum dolor sit amet.</h3>
+                <h3 class="slideTitle">Une première expérience pro</h3>
                 <div class="slideContainer">
                     <div class="frontSlideContainer">
-                        <img class="frontSlide" src="/Assest/PresentationSectionImg/constructionSlide.png">
+                        <img class="frontSlide" src="../Assest/PresentationSectionImg/constructionSlide.png">
                     </div>
                     <div class="backSlideContainer">
-                        <img class="backSlide" src="/Assest/PresentationSectionImg/citySlide.png">
+                        <img class="backSlide" src="../Assest/PresentationSectionImg/citySlide.png">
                     </div>
                 </div>
-                <div class="slideText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad totam animi ut in
-                    ipsa
-                    dolorem dolor recusandae labore excepturi. Id aut facere repellendus illo blanditiis vitae possimus
-                    suscipit dolorum totam.</div>
+                <div class="slideText">Après avoir obtenu mon C.A.P maçonnerie chez les Compagnons du devoir,
+                    j'ai travaillé une dizaine d'année en tant que maçon. Ces années d'expérience dans le bâtiment
+                    mon rendus rigoureux et ponctuel. J'y ai appris à suivre un cahier des charges, à travailler en
+                    équipe et à développer une curiosité pour apprendre et m'adapter a de nouvelles techniques de travail.
+                </div>
             </div>
 
             <div class="mySlides fade">
-                <h3 class="slideTitle">Lorem ipsum dolor sit amet.</h3>
+                <h3 class="slideTitle">Un voyage</h3>
                 <div class="slideContainer">
                     <div class="frontSlideContainer">
-                        <img class="frontSlide" src="/Assest/PresentationSectionImg/backpackSlide.png">
+                        <img class="frontSlide" src="../Assest/PresentationSectionImg/backpackSlide.png">
                     </div>
                     <div class="backSlideContainer">
-                        <img class="backSlide" src="/Assest/PresentationSectionImg/aroundWorldSlide.png">
+                        <img class="backSlide" src="../Assest/PresentationSectionImg/aroundWorldSlide.png">
                     </div>
                 </div>
-                <div class="slideText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad totam animi ut in
-                    ipsa
-                    dolorem dolor recusandae labore excepturi. Id aut facere repellendus illo blanditiis vitae possimus
-                    suscipit dolorum totam.</div>
+                <div class="slideText">Je suis ensuite parti à l'étranger pendant quelques années, en Nouvelle-Zélande
+                    puis au Chili. Ces voyages mon permis de devenir bilingue en anglais et m'ont ouvert à d'autres
+                    cultures et pays.
+                </div>
             </div>
 
             <div class="mySlides fade">
-                <h3 class="slideTitle">Lorem ipsum dolor sit amet.</h3>
+                <h3 class="slideTitle">Un nouvel objectif</h3>
                 <div class="slideContainer">
                     <div class="frontSlideContainer">
-                        <img class="frontSlide" src="/Assest/PresentationSectionImg/diplomeSlide.png">
+                        <img class="frontSlide" src="../Assest/PresentationSectionImg/diplomeSlide.png">
                     </div>
                     <div class="backSlideContainer">
-                        <img class="backSlide" src="/Assest/PresentationSectionImg/officeSlide.png">
+                        <img class="backSlide" src="../Assest/PresentationSectionImg/officeSlide.png">
                     </div>
                 </div>
-                <div class="slideText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad totam animi ut in
-                    ipsa
-                    dolorem dolor recusandae labore excepturi. Id aut facere repellendus illo blanditiis vitae possimus
-                    suscipit dolorum totam.</div>
+                <div class="slideText">En revenant en France j'ai décidé de changer de métier et de me lancer dans le
+                    développement web, un secteur qui m'a toujours attiré et qui est en pleine croissance. Mon diplôme
+                    de développeur web bac +2 en poche, je cherche maintenant à me spécialiser dans le back-end et
+                    recherche une alternance pour acquérir de l'expérience professionnelle.
+                </div>
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -190,20 +192,22 @@ if (!empty($_POST)) {
             <div class="flipCard">
                 <div class="flipCardInner">
                     <div class="flipCardFront">
-                        <img class="workLinkImg" src="/Assest/flipCardImg/c2cImg.png" alt="">
+                        <img class="workLinkImg" src="../Assest/flipCardImg/c2cImg.png" alt="">
                     </div>
                     <div class="flipCardBack">
-                        <p>Description de site</p>
-                        <p>technologies utilisées</p>
-                        <a href="https://c2c.c2capture.fr/" target="_blank" class="btnVisitSite">Click to visit the
-                            site</a>
+                        <p>Description du site :<br><br> Galerie d'exposition pour une photographe comportant plusieurs
+                            collections composées de photos. Le site comprend également une partie admin accessible
+                            pour la / les personnes autorisées permettant de créer, modifier ou supprimer les galeries,
+                            collections et leurs contenus.</p>
+                        <p>technologies utilisées :<br><br> HTML / CSS / JS / PHP / MySQL</p>
+                        <a href="https://c2capture.fr/" target="_blank" class="btnVisitSite">Click to visit the site</a>
                     </div>
                 </div>
             </div>
             <div class="flipCard">
                 <div class="flipCardInner">
                     <div class="flipCardFront">
-                        <img class="workLinkImg" src="/Assest/NavbarImg/presentationLinkImg.webp" alt="">
+                        <img class="workLinkImg" src="../Assest/NavbarImg/presentationLinkImg.webp" alt="">
                     </div>
                     <div class="flipCardBack">
                         <p>Description de site</p>
@@ -215,7 +219,7 @@ if (!empty($_POST)) {
             <div class="flipCard">
                 <div class="flipCardInner">
                     <div class="flipCardFront">
-                        <img class="workLinkImg" src="/Assest/NavbarImg/presentationLinkImg.webp" alt="">
+                        <img class="workLinkImg" src="../Assest/NavbarImg/presentationLinkImg.webp" alt="">
                     </div>
                     <div class="flipCardBack">
                         <p>Description de site</p>
@@ -262,25 +266,25 @@ if (!empty($_POST)) {
     <footer>
         <!-- <div class="contactsContainer">
             <div id="contactEmail" class="contactLink">
-                <img src="/Assest/ContactIcons/002-email.png" alt="">
+                <img src="../Assest/ContactIcons/002-email.png" alt="">
                 <a href="mailto:stephan.canioni@outlook.fr" class="contactText">stephan.canioni@outlook.fr</a>
             </div>
             <div id="contactTel" class="contactLink">
-                <img src="/Assest/ContactIcons/003-phone-call.png" alt="">
+                <img src="../Assest/ContactIcons/003-phone-call.png" alt="">
                 <p class="contactText">06.00.00.00.00</p>
             </div>
             <div id="contactLinkedIn" class="contactLink">
-                <img src="/Assest/ContactIcons/001-linkedin.png" alt="">
+                <img src="../Assest/ContactIcons/001-linkedin.png" alt="">
                 <a class="contactText" href="www.linkedin.com/in/stephan-canioni-574932204">Mon LinkedIn</a>
             </div>
             <div id="contactGitHub" class="contactLink">
-                <img src="/Assest/ContactIcons/004-github.png" alt="">
+                <img src="../Assest/ContactIcons/004-github.png" alt="">
                 <a class="contactText" href="https://github.com/Canioni-S">Mon GitHub</a>
             </div>
         </div> -->
 
     </footer>
-    <script src="/script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
