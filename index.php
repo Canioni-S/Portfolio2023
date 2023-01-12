@@ -33,7 +33,7 @@ if (!empty($_POST)) {
 <body>
     <div id="top"></div>
     <!-- NAVBAR -->
-    <nav id="navBar" class="flexCenter">
+    <nav id="navBar" class="burger">
         <div id="brandContainer" class="flexCenter">
             <a href="#top">
                 <h1 id="brandName">CanioniDev</h1>
@@ -61,6 +61,11 @@ if (!empty($_POST)) {
                 <div class="navHoverEffect"></div>
             </a>
         </div>
+        <a href="javascript:void(0);" class="navBarIconBurger" onclick="navBarBurger()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </a>
     </nav>
 
     <!-- HOME SECTION -->
@@ -242,17 +247,17 @@ if (!empty($_POST)) {
                 <h3 id="formTitle">Contactez moi par email</h3>
 
                 <div class="formItem">
-                    <label for="lastname">Nom</label>
+                    <label class="formLabel" for="lastname">Nom</label>
                     <input type="text" name="name" class="formInput" placeholder="e.g. john doe" required>
                 </div>
 
                 <div class="formItem">
-                    <label for="email">Adresse email</label>
+                    <label class="formLabel" for="email">Adresse email</label>
                     <input type="email" name="email" class="formInput" placeholder="email@domain.com" required>
                 </div>
 
                 <div class="formItem">
-                    <label for="description">Votre message</label>
+                    <label class="formLabel" for="description">Votre message</label>
                     <textarea rows="5" cols="50" name="description" class="formInput" placeholder="type here" required></textarea>
                 </div>
 

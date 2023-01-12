@@ -38,3 +38,12 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+function navBarBurger() {
+    var x = document.getElementById("navBar");
+    if (x.className === "burger") {
+      x.className += " responsive";
+    } else {
+      x.className = "burger";
+    }
+  }
