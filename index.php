@@ -41,12 +41,12 @@ if (!empty($_POST)) {
         </div>
         <div id="linksContainer" class="flexCenter">
             <a href="#presentationSection" class="navLink flexCenter">
-                <p class="textLink">presentation</p>
+                <p class="textLink">présentation</p>
                 <img src="../Assest/NavbarImg/presentationLinkImg.webp" alt="" class="navLinkImg">
                 <div class="navHoverEffect"></div>
             </a>
             <a href="#workSection" class="navLink flexCenter" id="workLink">
-                <p class="textLink">my work</p>
+                <p class="textLink">réalisation</p>
                 <img src="../Assest/NavbarImg/workLinkImg.webp" alt="" class="navLinkImg">
                 <div class="navHoverEffect"></div>
             </a>
@@ -56,7 +56,7 @@ if (!empty($_POST)) {
                 <div class="navHoverEffect"></div>
             </a>
             <a href="/Assest/New CV.pdf" class="navLink flexCenter" id="cvLink" download="Canioni-Stéphan-CV" onclick="return confirm('Confirm download Canioni-Stéphan-CV?');">
-                <p class="textLink">donwload cv</p>
+                <p class="textLink">télécharger cv</p>
                 <img src="../Assest/NavbarImg/cvLinkImg.webp" alt="" class="navLinkImg">
                 <div class="navHoverEffect"></div>
             </a>
@@ -94,13 +94,13 @@ if (!empty($_POST)) {
         <div id="homeFrontContainer" class="flexCenter">
             <div class="homeFrontText">
                 <div id="lineOne">
-                    <p>Hi, I am</p>
+                    <p>Bonjour, je suis</p>
                 </div>
                 <div id="lineTwo">
                     <p>Stéphan Canioni,</p>
                 </div>
                 <div id="lineThree">
-                    <p>web & web mobile developper.</p>
+                    <p>Développeur web & web mobile.</p>
                 </div>
             </div>
             <div id="homeImgContainer">
@@ -115,7 +115,7 @@ if (!empty($_POST)) {
     <!-- PRESENTATION SECTION -->
     <section id="presentationSection" class="sectionContainer flexCenter">
         <div class="mirrorContainer">
-            <h2 id="mirroredPresentation" class="mirroredTitle">presentation</h2>
+            <h2 id="mirroredPresentation" class="mirroredTitle">présentation</h2>
         </div>
 
         <div class="slideshowContainer">
@@ -186,7 +186,7 @@ if (!empty($_POST)) {
     <!-- WORK SECTION -->
     <section id="workSection" class="sectionContainer flexCenter">
         <div class="mirrorContainer">
-            <h2 id="mirroredWork" class="mirroredTitle">my work</h2>
+            <h2 id="mirroredWork" class="mirroredTitle">réalisation</h2>
         </div>
         <div class="flipCardsContainer flexCenter">
             <div class="flipCard">
@@ -204,7 +204,7 @@ if (!empty($_POST)) {
                     </div>
                 </div>
             </div>
-            <div class="flipCard">
+            <!-- <div class="flipCard">
                 <div class="flipCardInner">
                     <div class="flipCardFront">
                         <img class="workLinkImg" src="../Assest/NavbarImg/presentationLinkImg.webp" alt="">
@@ -228,7 +228,7 @@ if (!empty($_POST)) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- CONTACT SECTION -->
@@ -264,25 +264,24 @@ if (!empty($_POST)) {
     </section>
 
     <footer>
-        <!-- <div class="contactsContainer">
-            <div id="contactEmail" class="contactLink">
+        <div class="footerContainer flexAround">
+            <div id="contactEmail" class="footerLink">
                 <img src="../Assest/ContactIcons/002-email.png" alt="">
-                <a href="mailto:stephan.canioni@outlook.fr" class="contactText">stephan.canioni@outlook.fr</a>
+                <a href="mailto:stephan.canioni@outlook.fr" class="footerText">stephan.canioni@outlook.fr</a>
             </div>
-            <div id="contactTel" class="contactLink">
+            <div id="contactTel" class="footerLink">
                 <img src="../Assest/ContactIcons/003-phone-call.png" alt="">
-                <p class="contactText">06.00.00.00.00</p>
+                <p class="footerText">06.69.15.04.73</p>
             </div>
-            <div id="contactLinkedIn" class="contactLink">
+            <div id="contactLinkedIn" class="footerLink">
                 <img src="../Assest/ContactIcons/001-linkedin.png" alt="">
-                <a class="contactText" href="www.linkedin.com/in/stephan-canioni-574932204">Mon LinkedIn</a>
+                <a class="footerText" href="https://www.linkedin.com/in/stephan-canioni-574932204/" target="_blank">Mon LinkedIn</a>
             </div>
-            <div id="contactGitHub" class="contactLink">
+            <div id="contactGitHub" class="footerLink">
                 <img src="../Assest/ContactIcons/004-github.png" alt="">
-                <a class="contactText" href="https://github.com/Canioni-S">Mon GitHub</a>
+                <a class="footerText" href="https://github.com/Canioni-S" target="_blank">Mon GitHub</a>
             </div>
-        </div> -->
-
+        </div>
     </footer>
     <script src="../script.js"></script>
 </body>
