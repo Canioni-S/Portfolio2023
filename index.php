@@ -33,43 +33,43 @@ if (!empty($_POST)) {
 <body>
     <div id="top"></div>
     <!-- NAVBAR -->
-    <nav id="navBar" class="burger">
-        <div id="brandContainer" class="flexCenter">
+    <nav id="navBar">
+        <div id="brandContainer" class="flexAround">
             <a href="#top">
                 <h1 id="brandName">CanioniDev</h1>
             </a>
-        </div>
-        <div id="linksContainer" class="flexCenter">
-            <a href="#presentationSection" class="navLink flexCenter">
-                <p class="textLink">présentation</p>
-                <img src="../Assest/NavbarImg/presentationLinkImg.webp" alt="" class="navLinkImg">
-                <div class="navHoverEffect"></div>
+            <a href="javascript:void(0);" class="navBarIconBurger" onclick="Burgerfunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </a>
-            <a href="#workSection" class="navLink flexCenter" id="workLink">
+        </div>
+        <div id="linksContainer" class="navBarBurger">
+            <a href="#presentationSectionAnchor" class="navLink flexCenter">
+                <p class="textLink">présentation</p>
+                <img src="../Assest/NavbarImg/presentationLinkImg.webp" alt="Photo de présentation, deux hommes se serrent la main" class="navLinkImg">
+                <!-- <div class="navHoverEffect"></div> -->
+            </a>
+            <a href="#workSectionAnchor" class="navLink flexCenter" id="workLink">
                 <p class="textLink">réalisation</p>
-                <img src="../Assest/NavbarImg/workLinkImg.webp" alt="" class="navLinkImg">
-                <div class="navHoverEffect"></div>
+                <img src="../Assest/NavbarImg/workLinkImg.webp" alt="Photo mettant en scène un homme de dos travaillant dans le codage informatique sur un ordinateur" class="navLinkImg">
+                <!-- <div class="navHoverEffect"></div> -->
             </a>
             <a href="#contactSection" class="navLink flexCenter" id="contactLink">
                 <p class="textLink">contact</p>
-                <img src="../Assest/NavbarImg/contactLinkImg.webp" alt="" class="navLinkImg">
-                <div class="navHoverEffect"></div>
+                <img src="../Assest/NavbarImg/contactLinkImg.webp" alt="Photo d'un homme tennant un téléphone affichant un contact" class="navLinkImg">
+                <!-- <div class="navHoverEffect"></div> -->
             </a>
             <a href="/Assest/New CV.pdf" class="navLink flexCenter" id="cvLink" download="Canioni-Stéphan-CV" onclick="return confirm('Confirm download Canioni-Stéphan-CV?');">
                 <p class="textLink">télécharger cv</p>
-                <img src="../Assest/NavbarImg/cvLinkImg.webp" alt="" class="navLinkImg">
-                <div class="navHoverEffect"></div>
+                <img src="../Assest/NavbarImg/cvLinkImg.webp" alt="Photo d'un curriculum vitae en papier sur une table" class="navLinkImg">
+                <!-- <div class="navHoverEffect"></div> -->
             </a>
         </div>
-        <a href="javascript:void(0);" class="navBarIconBurger" onclick="navBarBurger()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </a>
     </nav>
 
     <!-- HOME SECTION -->
-    <section id="homeSection" class="sectionContainer flexCenter">
+    <section id="homeSection">
         <!-- ANIMATED LOGO BACKGROUND -->
         <div class="homeBackground">
             <div id="logoHtml" class="logoContainer">
@@ -116,9 +116,9 @@ if (!empty($_POST)) {
             <img id="scrollImg" src="../Assest/HomeSectionImg/scrollDownImg.png" alt="">
         </div>
     </section>
-
     <!-- PRESENTATION SECTION -->
-    <section id="presentationSection" class="sectionContainer flexCenter">
+    <div id="presentationSectionAnchor"></div>
+    <section id="presentationSection" class="flexCenter">
         <div class="mirrorContainer">
             <h2 id="mirroredPresentation" class="mirroredTitle">présentation</h2>
         </div>
@@ -189,7 +189,8 @@ if (!empty($_POST)) {
     </section>
 
     <!-- WORK SECTION -->
-    <section id="workSection" class="sectionContainer flexCenter">
+    <div id="workSectionAnchor"></div>
+    <section id="workSection" class="flexCenter">
         <div class="mirrorContainer">
             <h2 id="mirroredWork" class="mirroredTitle">réalisation</h2>
         </div>
@@ -209,35 +210,41 @@ if (!empty($_POST)) {
                     </div>
                 </div>
             </div>
-            <!-- <div class="flipCard">
+            <div class="flipCard">
                 <div class="flipCardInner">
                     <div class="flipCardFront">
-                        <img class="workLinkImg" src="../Assest/NavbarImg/presentationLinkImg.webp" alt="">
+                        <img class="workLinkImg" src="../Assest/flipCardImg/c2cImg.png" alt="">
                     </div>
                     <div class="flipCardBack">
-                        <p>Description de site</p>
-                        <p>technologies utilisées</p>
-                        <a href="" class="btnVisitSite">Click to visit the site</a>
+                        <p>Description du site :<br><br> Galerie d'exposition pour une photographe comportant plusieurs
+                            collections composées de photos. Le site comprend également une partie admin accessible
+                            pour la / les personnes autorisées permettant de créer, modifier ou supprimer les galeries,
+                            collections et leurs contenus.</p>
+                        <p>technologies utilisées :<br><br> HTML / CSS / JS / PHP / MySQL</p>
+                        <a href="https://c2capture.fr/" target="_blank" class="btnVisitSite">Click to visit the site</a>
                     </div>
                 </div>
             </div>
             <div class="flipCard">
                 <div class="flipCardInner">
                     <div class="flipCardFront">
-                        <img class="workLinkImg" src="../Assest/NavbarImg/presentationLinkImg.webp" alt="">
+                        <img class="workLinkImg" src="../Assest/flipCardImg/c2cImg.png" alt="">
                     </div>
                     <div class="flipCardBack">
-                        <p>Description de site</p>
-                        <p>technologies utilisées</p>
-                        <a href="" class="btnVisitSite">Click to visit the site</a>
+                        <p>Description du site :<br><br> Galerie d'exposition pour une photographe comportant plusieurs
+                            collections composées de photos. Le site comprend également une partie admin accessible
+                            pour la / les personnes autorisées permettant de créer, modifier ou supprimer les galeries,
+                            collections et leurs contenus.</p>
+                        <p>technologies utilisées :<br><br> HTML / CSS / JS / PHP / MySQL</p>
+                        <a href="https://c2capture.fr/" target="_blank" class="btnVisitSite">Click to visit the site</a>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contactSection" class="sectionContainer flexCenter">
+    <section id="contactSection" class="flexCenter">
         <div class="mirrorContainer">
             <h2 id="mirroredContact" class="mirroredTitle">contact</h2>
         </div>
@@ -268,7 +275,7 @@ if (!empty($_POST)) {
 
     </section>
 
-    <footer>
+    <!-- <footer>
         <div class="footerContainer flexAround">
             <div id="contactEmail" class="footerLink">
                 <img src="../Assest/ContactIcons/002-email.png" alt="">
@@ -287,7 +294,7 @@ if (!empty($_POST)) {
                 <a class="footerText" href="https://github.com/Canioni-S" target="_blank">Mon GitHub</a>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script src="../script.js"></script>
 </body>
 

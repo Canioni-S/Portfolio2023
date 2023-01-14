@@ -1,14 +1,16 @@
 // NAVBAR STYLE MODIFICATION ON SCROLL
-window.onscroll = function () { navBarReduceOnScroll() };
-function navBarReduceOnScroll() {
-    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-        document.getElementById("navBar").style.height = "6vh";
-        document.getElementById("brandName").style.fontSize = "3.5vw";
-    } else {
-        document.getElementById("navBar").style.height = "15vh";
-        document.getElementById("brandName").style.fontSize = "5vw";
-    }
-}
+// window.onscroll = function () { navBarReduceOnScroll() };
+// function navBarReduceOnScroll() {
+//     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+//         document.getElementById("navBar").style.minHeight = "8vh";
+//         document.getElementById("navBar").style.borderBottom = "2px solid black";
+//         document.getElementById("homeSection").style.minHeight = "92vh";
+//     } else {
+//         document.getElementById("navBar").style.minHeight = "15vh";
+//         document.getElementById("navBar").style.borderBottom = "none";
+//         document.getElementById("homeSection").style.minHeight = "85vh";
+//     }
+// }
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -39,11 +41,15 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-function navBarBurger() {
-    var x = document.getElementById("navBar");
-    if (x.className === "burger") {
-      x.className += " responsive";
+// NAVBAR MENU BURGER SCRIPT
+function Burgerfunction(x) {
+    x.classList.toggle("change");
+
+    var y = document.getElementById("linksContainer");
+    if (y.className == "navBarBurger") {
+        y.className += " responsive";
     } else {
-      x.className = "burger";
+        y.className = "navBarBurger";
     }
-  }
+
+}
