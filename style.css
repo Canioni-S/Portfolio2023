@@ -74,9 +74,19 @@ a {
 }
 
 /* ADD ANCHOR AND SPACE FOR NAVBAR ON TOP OF EACH SECTION */
-#workSectionAnchor, #presentationSectionAnchor{
+#presentationSectionAnchor {
     height: 25vh;
-    background-color: aqua;
+    background-color: whitesmoke;
+}
+
+#workSectionAnchor{
+    height: 25vh;
+    background: linear-gradient(whitesmoke, rgba(0, 0, 0, 0.1));
+}
+
+#contactSectionAnchor {
+    height: 25vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), whitesmoke);
 }
 
 /* NAVBAR */
@@ -86,9 +96,10 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    z-index: 60;
+    width: 100vw;
     background-color: whitesmoke;
     border-bottom: 1.5px solid black;
+    z-index: 60;
     overflow: hidden;
 }
 
@@ -1082,7 +1093,7 @@ a {
 
 .slideshowContainer {
     position: relative;
-    width: 60%;
+    width: 95%;
     min-height: 50vh;
 }
 
@@ -1179,10 +1190,16 @@ a {
     background-color: rgba(245, 245, 245, 0.7);
 }
 
+/* COMMANDS SLIDESHOW */
+#slideShowCommands {
+    text-align: center;
+    padding: 1em;
+}
+
 .prev, .next {
     cursor: pointer;
-    position: absolute;
-    top: 50%;
+    /* position: absolute;
+    top: 50%; */
     margin-top: -22px;
     padding: 16px;
     color: whitesmoke;
@@ -1192,15 +1209,6 @@ a {
     border-radius: 3px;
     user-select: none;
     background-color: rgba(0, 0, 0, 0.4);
-}
-
-.prev {
-    left: -40px;
-}
-
-.next {
-    right: -40px;
-    border-radius: 3px;
 }
 
 .prev:hover, .next:hover {
@@ -1256,7 +1264,7 @@ a {
 .flipCard {
     background-color: transparent;
     width: 80%;
-    height: 30vh;
+    height: 50vh;
     perspective: 1000px;
 }
 
@@ -1372,13 +1380,15 @@ a {
     background-color: rgba(255, 68, 0, 0.3);
 }
 
+/* FOOTER */
 
 .footerContainer {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    width: 95%;
     min-height: 10vh;
-    /* gap: 1em; */
-    /* padding: 1em; */
+    gap: 1em;
+    padding: 1em;
     background-color: rgba(0, 0, 0, 0.1);
 }
 

@@ -175,15 +175,15 @@ if (!empty($_POST)) {
                 </div>
             </div>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <br>
+        <!-- <br> -->
 
-        <div style="text-align:center">
+        <div id="slideShowCommands">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <div></div>
     </section>
@@ -210,40 +210,11 @@ if (!empty($_POST)) {
                     </div>
                 </div>
             </div>
-            <div class="flipCard">
-                <div class="flipCardInner">
-                    <div class="flipCardFront">
-                        <img class="workLinkImg" src="../Assest/flipCardImg/c2cImg.png" alt="">
-                    </div>
-                    <div class="flipCardBack">
-                        <p>Description du site :<br><br> Galerie d'exposition pour une photographe comportant plusieurs
-                            collections composées de photos. Le site comprend également une partie admin accessible
-                            pour la / les personnes autorisées permettant de créer, modifier ou supprimer les galeries,
-                            collections et leurs contenus.</p>
-                        <p>technologies utilisées :<br><br> HTML / CSS / JS / PHP / MySQL</p>
-                        <a href="https://c2capture.fr/" target="_blank" class="btnVisitSite">Click to visit the site</a>
-                    </div>
-                </div>
-            </div>
-            <div class="flipCard">
-                <div class="flipCardInner">
-                    <div class="flipCardFront">
-                        <img class="workLinkImg" src="../Assest/flipCardImg/c2cImg.png" alt="">
-                    </div>
-                    <div class="flipCardBack">
-                        <p>Description du site :<br><br> Galerie d'exposition pour une photographe comportant plusieurs
-                            collections composées de photos. Le site comprend également une partie admin accessible
-                            pour la / les personnes autorisées permettant de créer, modifier ou supprimer les galeries,
-                            collections et leurs contenus.</p>
-                        <p>technologies utilisées :<br><br> HTML / CSS / JS / PHP / MySQL</p>
-                        <a href="https://c2capture.fr/" target="_blank" class="btnVisitSite">Click to visit the site</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
     <!-- CONTACT SECTION -->
+    <div id="contactSectionAnchor"></div>
     <section id="contactSection" class="flexCenter">
         <div class="mirrorContainer">
             <h2 id="mirroredContact" class="mirroredTitle">contact</h2>
@@ -275,7 +246,7 @@ if (!empty($_POST)) {
 
     </section>
 
-    <!-- <footer>
+    <footer>
         <div class="footerContainer flexAround">
             <div id="contactEmail" class="footerLink">
                 <img src="../Assest/ContactIcons/002-email.png" alt="">
@@ -294,7 +265,7 @@ if (!empty($_POST)) {
                 <a class="footerText" href="https://github.com/Canioni-S" target="_blank">Mon GitHub</a>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <script src="../script.js"></script>
 </body>
 
