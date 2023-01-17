@@ -9,14 +9,14 @@
 }
 
 /* GENERAL STYLE */
-* {
-    margin: 0;
-    padding: 0;
-}
-
 html {
     scroll-behavior: smooth;
+}
+
+body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
 }
 
 .flexCenter {
@@ -49,7 +49,7 @@ a {
 .mirroredTitle {
     padding: 0.5em;
     font-family: "Mermaid";
-    font-size: calc(30px + 1.5vw);
+    font-size: calc(18px + 1.5vw);
     text-transform: uppercase;
     color: #000;
 }
@@ -89,37 +89,33 @@ a {
     background: linear-gradient(rgba(0, 0, 0, 0.1), whitesmoke);
 }
 
+#mainContainer {
+    display: block;
+    width: auto;
+}
+
 /* NAVBAR */
 #navBar {
-    position: fixed;
+    position: sticky;
     top: 0px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
+    width: 100%;
     background-color: whitesmoke;
     border-bottom: 1.5px solid black;
-    z-index: 60;
-    overflow: hidden;
+    z-index: 99;
 }
 
 /* BRAND NAME AND BURGER ICON */
 #brandContainer {
     width: 100%;
-    height: 100%;
     font-family: "Cake";
     background-color: whitesmoke;
 }
 
 #brandName {
-    padding: .2em 0em;
     font-size: calc(30px + 2vw);
     color: black;
 }
 
-.navBarIconBurger {
-    padding: 0 1em;
-}
 
 .bar1, .bar2, .bar3 {
     width: 35px;
@@ -320,777 +316,28 @@ a {
     animation: animHtml 60s infinite ease;
 }
 
-@keyframes animHtml {
-    0% {
-        top: 0%;
-        left: 75%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    5% {
-        top: 50%;
-        left: 0%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    15% {
-        top: 50%;
-        left: 0%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    20% {
-        top: 50%;
-        left: 33%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    30% {
-        top: 50%;
-        left: 33%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    35% {
-        top: 0%;
-        left: 0%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    45% {
-        top: 0%;
-        left: 0%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    50% {
-        top: 0%;
-        left: 25%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    60% {
-        top: 0%;
-        left: 25%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    65% {
-        top: 0%;
-        left: 50%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    75% {
-        top: 0%;
-        left: 50%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    80% {
-        top: 50%;
-        left: 66%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    90% {
-        top: 50%;
-        left: 66%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    95% {
-        top: 0%;
-        left: 75%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    100% {
-        top: 0%;
-        left: 75%;
-        width: 24.5%;
-        transition: width 2s
-    }
-}
-
 #logoCss {
     animation: animCss 60s infinite ease-in;
-}
-
-@keyframes animCss {
-    0% {
-        top: 50%;
-        left: 66%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    5% {
-        top: 0%;
-        left: 0%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    15% {
-        top: 0%;
-        left: 0%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    20% {
-        top: 0%;
-        left: 25%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    30% {
-        top: 0%;
-        left: 25%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    35% {
-        top: 50%;
-        left: 33%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    45% {
-        top: 50%;
-        left: 33%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    50% {
-        top: 50%;
-        left: 0%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    60% {
-        top: 50%;
-        left: 0%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    65% {
-        top: 0%;
-        left: 75%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    75% {
-        top: 0%;
-        left: 75%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    80% {
-        top: 0%;
-        left: 50%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    90% {
-        top: 0%;
-        left: 50%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    95% {
-        top: 50%;
-        left: 66%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    100% {
-        top: 50%;
-        left: 66%;
-        width: 33%;
-        transition: width 2s
-    }
 }
 
 #logoJs {
     animation: animJs 60s infinite ease-out;
 }
 
-@keyframes animJs {
-    0% {
-        top: 50%;
-        left: 0%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    5% {
-        top: 50%;
-        left: 33%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    15% {
-        top: 50%;
-        left: 33%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    20% {
-        top: 0%;
-        left: 75%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    30% {
-        top: 0%;
-        left: 75%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    35% {
-        top: 0%;
-        left: 50%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    45% {
-        top: 0%;
-        left: 50%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    50% {
-        top: 50%;
-        left: 66%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    60% {
-        top: 50%;
-        left: 66%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    65% {
-        top: 0%;
-        left: 25%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    75% {
-        top: 0%;
-        left: 25%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    80% {
-        top: 0%;
-        left: 0%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    90% {
-        top: 0%;
-        left: 0%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    95% {
-        top: 50%;
-        left: 0%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    100% {
-        top: 50%;
-        left: 0%;
-        width: 33%;
-        transition: width 2s
-    }
-}
-
 #logoPhp {
     animation: animPhp 60s infinite linear;
-}
-
-@keyframes animPhp {
-    0% {
-        top: 0%;
-        left: 0%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    5% {
-        top: 0%;
-        left: 75%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    95% {
-        top: 0%;
-        left: 75%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    20% {
-        top: 50%;
-        left: 0%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    30% {
-        top: 50%;
-        left: 0%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    35% {
-        top: 0%;
-        left: 25%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    45% {
-        top: 0%;
-        left: 25%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    50% {
-        top: 0%;
-        left: 50%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    60% {
-        top: 0%;
-        left: 50%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    65% {
-        top: 50%;
-        left: 66%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    75% {
-        top: 50%;
-        left: 66%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    80% {
-        top: 50%;
-        left: 33%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    90% {
-        top: 50%;
-        left: 33%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    95% {
-        top: 0%;
-        left: 0%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    100% {
-        top: 0%;
-        left: 0%;
-        width: 24.5%;
-        transition: width 2s
-    }
 }
 
 #logoMySql {
     animation: animMySql 60s infinite ease;
 }
 
-@keyframes animMySql {
-    0% {
-        top: 50%;
-        left: 33%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    5% {
-        top: 50%;
-        left: 66%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    95% {
-        top: 50%;
-        left: 66%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    20% {
-        top: 0%;
-        left: 50%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    30% {
-        top: 0%;
-        left: 50%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    35% {
-        top: 50%;
-        left: 0%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    45% {
-        top: 50%;
-        left: 0%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    50% {
-        top: 0%;
-        left: 75%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    60% {
-        top: 0%;
-        left: 75%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    65% {
-        top: 0%;
-        left: 0%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    75% {
-        top: 0%;
-        left: 0%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    80% {
-        top: 0%;
-        left: 25%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    90% {
-        top: 0%;
-        left: 25%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    95% {
-        top: 50%;
-        left: 33%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    100% {
-        top: 50%;
-        left: 33%;
-        width: 33%;
-        transition: width 2s
-    }
-}
-
 #logoBootstrap {
     animation: animBootstrap 60s infinite ease-in-out;
 }
 
-@keyframes animBootstrap {
-    0% {
-        top: 0%;
-        left: 50%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    5% {
-        top: 0%;
-        left: 25%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    95% {
-        top: 0%;
-        left: 25%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    20% {
-        top: 0%;
-        left: 0%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    30% {
-        top: 0%;
-        left: 0%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    35% {
-        top: 50%;
-        left: 66%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    45% {
-        top: 50%;
-        left: 66%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    50% {
-        top: 50%;
-        left: 33%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    60% {
-        top: 50%;
-        left: 33%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    65% {
-        top: 50%;
-        left: 0%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    75% {
-        top: 50%;
-        left: 0%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    80% {
-        top: 0%;
-        left: 75%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    90% {
-        top: 0%;
-        left: 75%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    95% {
-        top: 0%;
-        left: 50%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    100% {
-        top: 0%;
-        left: 50%;
-        width: 24.5%;
-        transition: width 2s
-    }
-}
-
 #logoWordPress {
     animation: animWordPress 60s infinite ease-in;
-}
-
-@keyframes animWordPress {
-    0% {
-        top: 0%;
-        left: 25%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    5% {
-        top: 0%;
-        left: 50%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    95% {
-        top: 0%;
-        left: 50%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    20% {
-        top: 50%;
-        left: 66%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    30% {
-        top: 50%;
-        left: 66%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    35% {
-        top: 0%;
-        left: 75%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    45% {
-        top: 0%;
-        left: 75%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    50% {
-        top: 0%;
-        left: 0%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    60% {
-        top: 0%;
-        left: 0%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    65% {
-        top: 50%;
-        left: 33%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    75% {
-        top: 50%;
-        left: 33%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    80% {
-        top: 50%;
-        left: 0%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    90% {
-        top: 50%;
-        left: 0%;
-        width: 33%;
-        transition: width 2s
-    }
-
-    95% {
-        top: 0%;
-        left: 25%;
-        width: 24.5%;
-        transition: width 2s
-    }
-
-    100% {
-        top: 0%;
-        left: 25%;
-        width: 24.5%;
-        transition: width 2s
-    }
 }
 
 .homeBackgroundImg {
@@ -1206,6 +453,10 @@ a {
     background-color: rgba(245, 245, 245, 0.7);
 }
 
+.slideText p{
+    width: 95%;
+}
+
 /* COMMANDS SLIDESHOW */
 #slideShowCommands {
     text-align: center;
@@ -1296,10 +547,6 @@ a {
 .flipCard:hover .flipCardInner {
     transform: rotateY(180deg);
 }
-
-/* .flipCardFront {
-     width: auto; 
-} */
 
 .flipCardFront, .flipCardBack {
     position: absolute;
@@ -1402,15 +649,15 @@ a {
 .footerContainer {
     display: flex;
     flex-wrap: wrap;
-    width: 95%;
+    width: 100%;
     min-height: 10vh;
     gap: 1em;
-    padding: 1em;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
 .footerLink {
     display: flex;
+    padding: .5em;
     gap: 1em;
 }
 
