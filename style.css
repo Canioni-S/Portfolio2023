@@ -79,7 +79,7 @@ a {
     background-color: whitesmoke;
 }
 
-#workSectionAnchor{
+#workSectionAnchor {
     height: 25vh;
     background: linear-gradient(whitesmoke, rgba(0, 0, 0, 0.1));
 }
@@ -91,7 +91,7 @@ a {
 
 /* NAVBAR */
 #navBar {
-    position: sticky;
+    position: fixed;
     top: 0px;
     display: flex;
     align-items: center;
@@ -210,7 +210,7 @@ a {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    min-height: 50vh;
+    min-height: 90vh;
 }
 
 /* FRONT */
@@ -222,7 +222,10 @@ a {
 }
 
 .homeFrontText {
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 1em;
 }
 
 #homeImgContainer {
@@ -240,18 +243,32 @@ a {
 }
 
 #lineTwo {
-    font-size: calc(15px + 5vw);
+    font-size: calc(25px + 5vw);
     color: whitesmoke;
 }
 
 #lineThree {
-    font-size: calc(15px + 3.5vw);
+    font-size: calc(20px + 3.5vw);
     color: orangered;
 }
 
-#scrollImg {
+#scrollIconContainer {
+    /* display: flex; */
+    width: 40%;
+}
+
+#fingerScroll {
     position: relative;
     top: -10px;
+    padding-top: 1.5em;
+    animation: scrollAnim 5s infinite ease-in-out;
+}
+
+#mouseScroll {
+    display: none;
+    position: relative;
+    top: -10px;
+    padding-top: 1.5em;
     animation: scrollAnim 5s infinite ease-in-out;
 }
 
@@ -1087,7 +1104,6 @@ a {
     position: relative;
     flex-direction: column;
     background-color: whitesmoke;
-    /* min-height: 100vh; */
     width: 100%;
 }
 
@@ -1198,8 +1214,6 @@ a {
 
 .prev, .next {
     cursor: pointer;
-    /* position: absolute;
-    top: 50%; */
     margin-top: -22px;
     padding: 16px;
     color: whitesmoke;
@@ -1257,14 +1271,16 @@ a {
 
 .flipCardsContainer {
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
+    height: 100%;
     gap: 1em;
 }
 
 .flipCard {
     background-color: transparent;
-    width: 80%;
-    height: 50vh;
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
     perspective: 1000px;
 }
 
@@ -1281,6 +1297,10 @@ a {
     transform: rotateY(180deg);
 }
 
+/* .flipCardFront {
+     width: auto; 
+} */
+
 .flipCardFront, .flipCardBack {
     position: absolute;
     width: 100%;
@@ -1289,8 +1309,10 @@ a {
     backface-visibility: hidden;
 }
 
-.flipCardFront {
+.workLinkImg {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .flipCardBack {
@@ -1300,15 +1322,10 @@ a {
 }
 
 .flipCardBack p {
-    font-size: calc(12px + .5vw);
+    font-size: 14px;
     margin: 0.5em;
 }
 
-.workLinkImg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /* CONTACT SECTION */
 
