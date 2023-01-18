@@ -47,11 +47,11 @@ if (!empty($_POST)) {
                 </a>
             </div>
             <div id="linksContainer" class="navBarBurger">
-                <a href="#presentationSectionAnchor" class="navLink flexCenter">
+                <a href="#presentationSection" class="navLink flexCenter">
                     <p class="textLink">présentation</p>
                     <img src="../Assest/NavbarImg/presentationLinkImg.webp" alt="Photo de présentation, deux hommes se serrent la main" class="navLinkImg">
                 </a>
-                <a href="#workSectionAnchor" class="navLink flexCenter" id="workLink">
+                <a href="#workSection" class="navLink flexCenter" id="workLink">
                     <p class="textLink">réalisation</p>
                     <img src="../Assest/NavbarImg/workLinkImg.webp" alt="Photo mettant en scène un homme de dos travaillant dans le codage informatique sur un ordinateur" class="navLinkImg">
                 </a>
