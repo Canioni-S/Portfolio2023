@@ -36,7 +36,7 @@ if (!empty($_POST)) {
         <div id="top"></div>
         <!-- NAVBAR -->
         <nav id="navBar">
-            <div id="brandContainer" class="flexAround">
+            <div id="brandContainer">
                 <a href="#top">
                     <h1 id="brandName">CanioniDev</h1>
                 </a>
@@ -106,9 +106,9 @@ if (!empty($_POST)) {
                         <p>Développeur web & web mobile.</p>
                     </div>
                 </div>
-                <div id="homeImgContainer">
+                <!-- <div id="homeImgContainer">
                     <img id="homeFrontImg" src="../Assest/HomeSectionImg/homeFrontImg.webp" alt="Image d'un ordinateur avec des icônes représentant differents langages informatiques">
-                </div>
+                </div> -->
             </div>
             <div id="scrollIconContainer" class="flexCenter">
                 <svg id="fingerScroll" version="1.0" xmlns="http://www.w3.org/2000/svg" width="50%" height="auto" viewBox="0 0 30.000000 34.000000" preserveAspectRatio="xMidYMid meet">
@@ -128,8 +128,8 @@ if (!empty($_POST)) {
             </div>
         </div>
         <!-- PRESENTATION SECTION -->
-        <div id="presentationSectionAnchor"></div>
         <div id="presentationSection" class="flexCenter">
+            <div class="anchor" id="presentationSectionAnchor"></div>
             <div class="mirrorContainer">
                 <h2 id="mirroredPresentation" class="mirroredTitle">présentation</h2>
             </div>
@@ -209,8 +209,8 @@ if (!empty($_POST)) {
         </div>
 
         <!-- WORK SECTION -->
-        <div id="workSectionAnchor"></div>
         <div id="workSection" class="flexCenter">
+            <div class="anchor" id="workSectionAnchor"></div>
             <div class="mirrorContainer">
                 <h2 id="mirroredWork" class="mirroredTitle">réalisation</h2>
             </div>
@@ -234,8 +234,8 @@ if (!empty($_POST)) {
         </div>
 
         <!-- CONTACT SECTION -->
-        <div id="contactSectionAnchor"></div>
         <div id="contactSection" class="flexCenter">
+            <div class="anchor" id="contactSectionAnchor"></div>
             <div class="mirrorContainer">
                 <h2 id="mirroredContact" class="mirroredTitle">contact</h2>
             </div>

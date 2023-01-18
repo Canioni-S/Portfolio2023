@@ -1,17 +1,3 @@
-// NAVBAR STYLE MODIFICATION ON SCROLL
-// window.onscroll = function () { navBarReduceOnScroll() };
-// function navBarReduceOnScroll() {
-//     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-//         document.getElementById("navBar").style.minHeight = "8vh";
-//         document.getElementById("navBar").style.borderBottom = "2px solid black";
-//         document.getElementById("homeSection").style.minHeight = "92vh";
-//     } else {
-//         document.getElementById("navBar").style.minHeight = "15vh";
-//         document.getElementById("navBar").style.borderBottom = "none";
-//         document.getElementById("homeSection").style.minHeight = "85vh";
-//     }
-// }
-
 let slideIndex = 1;
 showSlides(slideIndex);
 

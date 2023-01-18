@@ -76,7 +76,7 @@ a {
 /* ADD ANCHOR AND SPACE FOR NAVBAR ON TOP OF EACH SECTION */
 #presentationSectionAnchor {
     height: 25vh;
-    background-color: whitesmoke;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), whitesmoke);
 }
 
 #workSectionAnchor {
@@ -90,15 +90,20 @@ a {
 }
 
 #mainContainer {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: auto;
 }
 
 /* NAVBAR */
 #navBar {
     position: sticky;
+    display: flex;
+    flex-direction: column;
     top: 0px;
     width: 100%;
+    /* height: auto; */
     background-color: whitesmoke;
     border-bottom: 1.5px solid black;
     z-index: 99;
@@ -106,7 +111,11 @@ a {
 
 /* BRAND NAME AND BURGER ICON */
 #brandContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
+    height: 45px;
     font-family: "Cake";
     background-color: whitesmoke;
 }
@@ -144,18 +153,18 @@ a {
 
 /* LINKS OF THE NAVBAR */
 .navBarBurger {
+    position: relative;
     display: none;
-}
-
-.navBarBurger.responsive {
-    display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     flex-direction: column;
     width: 100%;
     overflow: hidden;
     background-color: rgb(24, 24, 24);
+}
+
+.navBarBurger.responsive {
+    display: flex;
 }
 
 .navLink {
@@ -180,19 +189,6 @@ a {
     opacity: 0.4;
 }
 
-
-.navHoverEffect {
-    position: absolute;
-    width: 0%;
-    height: 100%;
-    background-color: rgba(255, 68, 0, 0.4);
-    transition: 0.5s ease-out;
-}
-
-.navLink:hover .navHoverEffect {
-    width: 25%;
-}
-
 .active {
     background-color: #666;
     color: white;
@@ -213,7 +209,6 @@ a {
 #homeFrontContainer {
     width: 100%;
     height: 100%;
-    padding: 1em 0;
     z-index: 50;
 }
 
@@ -221,12 +216,11 @@ a {
     display: flex;
     flex-direction: column;
     width: 90%;
-    gap: 1em;
 }
 
 #homeImgContainer {
     display: none;
-    width: 50%;
+    width: 45%;
 }
 
 #homeFrontImg {
@@ -249,7 +243,6 @@ a {
 }
 
 #scrollIconContainer {
-    /* display: flex; */
     width: 40%;
 }
 
@@ -298,10 +291,10 @@ a {
 .homeBackground {
     position: absolute;
     display: flex;
-    height: 100%;
     width: 100%;
+    height: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .logoContainer {
@@ -453,7 +446,7 @@ a {
     background-color: rgba(245, 245, 245, 0.7);
 }
 
-.slideText p{
+.slideText p {
     width: 95%;
 }
 
@@ -671,38 +664,67 @@ a {
     font-size: calc(15px + .5vw);
 }
 
-/* @media only screen and (max-width: 1000px) {
-    #brandContainer{
-        width: 100%;
-    }
-    .burger{
-        flex-direction: column;
-    }
-    #linksContainer {
+/* CHAGNE STYLE FOR SCREEN WITH WIDTH MORE THAN 1070PX */
+@media only screen and (min-width: 1070px) {
+
+    .anchor {
         display: none;
+    }
+
+    /* NAVBAR */
+    #navBar {
+        flex-direction: row;
+    }
+
+    #brandContainer {
+        width: 20%;
+        height: 60px;
     }
 
     .navBarIconBurger {
-        display: block;
-    }
-
-    .homeFrontText {
-        width: 100%;
-    }
-
-    #homeImgContainer {
         display: none;
     }
 
+    .navBarBurger {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .navLink {
+        height: 60px;
+    }
+
+    /* HOME SECTION */
+    .homeFrontText {
+        padding: 0;
+        margin: 0;
+        width: 85%;
+    }
+
+    .homeFrontText div p {
+        padding: .2em 0;
+        margin: 0;
+    }
+
+    #scrollIconContainer {
+        width: 20%;
+    }
+
+    #fingerScroll {
+        display: none;
+    }
+
+    #mouseScroll {
+        display: block;
+    }
+
+    .slideshowContainer {
+        width: 60%;
+    }
+
+    /* FORM SECTION */
     #formContainer {
-        width: 100%;
+        width: 40%;
     }
-
-    .form {
-        width: 90%;
-    }
-
-    .footerContainer {
-        flex-direction: column;
-    }
-} */
+}
