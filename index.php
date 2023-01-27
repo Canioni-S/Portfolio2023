@@ -150,8 +150,8 @@ if (!empty($_POST)) {
                         <p>
                             Après avoir obtenu mon C.A.P maçonnerie chez les Compagnons du devoir,
                             j'ai travaillé une dizaine d'année en tant que maçon. Ces années d'expérience dans le bâtiment
-                            mon rendus rigoureux et ponctuel. J'y ai appris à suivre un cahier des charges, à travailler en
-                            équipe et à développer une curiosité pour apprendre et m'adapter a de nouvelles techniques de travail.
+                            m'ont rendus rigoureux et ponctuel. J'ai appris à suivre un cahier des charges, à travailler en
+                            équipe et à développer une curiosité pour apprendre et m'adapter à de nouvelles techniques de travail.
                         </p>
                     </div>
                 </div>
@@ -169,7 +169,7 @@ if (!empty($_POST)) {
                     <div class="slideText flexCenter">
                         <p>
                             Je suis ensuite parti à l'étranger pendant quelques années, en Nouvelle-Zélande
-                            puis au Chili. Ces voyages mon permis de devenir bilingue en anglais et m'ont ouvert à d'autres
+                            puis au Chili. Ces voyages m'ont permis de devenir bilingue en anglais et m'ont ouvert à d'autres
                             cultures et pays.
                         </p>
                     </div>
