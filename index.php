@@ -24,7 +24,6 @@ if (!empty($_POST)) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styleAnimLogos.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CanioniDev</title>
@@ -68,48 +67,77 @@ if (!empty($_POST)) {
 
         <!-- HOME SECTION -->
         <div id="homeSection">
-            <!-- ANIMATED LOGO BACKGROUND -->
-            <div class="homeBackground">
-                <div id="logoHtml" class="logoContainer">
-                    <img class="homeBackgroundImg" src="../Assest/LogoImg/LogoHtmlPic.webp" alt="Logo HTML">
-                </div>
-                <div id="logoCss" class="logoContainer">
-                    <img class="homeBackgroundImg" src="../Assest/LogoImg/LogoCssPic.png" alt="Logo CSS">
-                </div>
-                <div id="logoJs" class="logoContainer">
-                    <img class="homeBackgroundImg" src="../Assest/LogoImg/LogoJsPic.webp" alt="Logo Javascript">
-                </div>
-                <div id="logoPhp" class="logoContainer">
-                    <img class="homeBackgroundImg" src="../Assest/LogoImg/LogoPhpPic.png" alt="Logo PHP">
-                </div>
-                <div id="logoMySql" class="logoContainer">
-                    <img class="homeBackgroundImg" src="../Assest/LogoImg/LogoMySqlPic.webp" alt="Logo My SQL">
-                </div>
-                <div id="logoBootstrap" class="logoContainer">
-                    <img class="homeBackgroundImg" src="../Assest/LogoImg/LogoBootstrapPic.png" alt="Logo Bootstrap">
-                </div>
-                <div id="logoWordPress" class="logoContainer">
-                    <img class="homeBackgroundImg" src="../Assest/LogoImg/LogoWordPressPic.png" alt="Logo Wordpress">
+            <!-- <img id="homeBG" src="/Assest/HomeSectionImg/space-galaxy-background.jpg" alt="Background of the milky way in a dark galaxy"> -->
+            <img id="homeBG" src="/Assest/HomeSectionImg/milky-way-galaxy-night.jpg" alt="Background of the milky way in a dark galaxy">
+            <div id="fullNameContainer">
+                <div class="fullName">
+                    <div id="firstName">
+                        <div class="letterContainers">
+                            <div class="stars star-s"></div>
+                            <div class="letters letter-s">s</div>
+                        </div>
+                        <div class="letterContainers">
+                            <div class="stars star-t"></div>
+                            <div class="letters letter-t">t</div>
+                        </div>
+                        <div class="letterContainers">
+                            <div class="stars star-é"></div>
+                            <div class="letters letter-é">é</div>
+                        </div>
+                        <div class="letterContainers">
+                            <div class="stars star-p"></div>
+                            <div class="letters letter-p">p</div>
+                        </div>
+                        <div class="letterContainers">
+                            <div class="stars star-h"></div>
+                            <div class="letters letter-h">h</div>
+                        </div>
+                        <div class="letterContainers">
+                            <div class="stars star-a"></div>
+                            <div class="letters letter-a">a</div>
+                        </div>
+                        <div class="letterContainers">
+                            <div class="stars star-n"></div>
+                            <div class="letters letter-n">n</div>
+                        </div>
+                    </div>
+                    <div id="lastName">
+                        <div class="letterContainers">
+                            <div class="stars star-c"></div>
+                            <div class="letters letter-c">c</div>
+                        </div>
+                        <div class="letterContainers">
+                            <div class="stars star-a"></div>
+                            <div class="letters letter-a">a</div>
+                        </div>
+                        <div class="letterContainers">
+                            <div class="stars star-n"></div>
+                            <div class="letters letter-n">n</div>
+                        </div>
+                        <div class="letterContainers">
+                            <div class="stars star-i"></div>
+                            <div class="letters letter-i">i</div>
+                        </div>
+                        <div class="letterContainers">
+                            <div class="stars star-o"></div>
+                            <div class="letters letter-o">o</div>
+                        </div>
+                        <div class="letterContainers">
+                            <div class="stars star-n"></div>
+                            <div class="letters letter-n">n</div>
+                        </div>
+                        <div class="letterContainers">
+                            <div class="stars star-i"></div>
+                            <div class="letters letter-i">i</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- HOME FRONT -->
-            <div id="homeFrontContainer" class="flexCenter">
-                <div class="homeFrontText">
-                    <div id="lineOne">
-                        <p>Bonjour, je suis</p>
-                    </div>
-                    <div id="lineTwo">
-                        <p>Stéphan Canioni,</p>
-                    </div>
-                    <div id="lineThree">
-                        <p>Développeur web & web mobile.</p>
-                    </div>
-                </div>
-                <!-- <div id="homeImgContainer">
-                    <img id="homeFrontImg" src="../Assest/HomeSectionImg/homeFrontImg.webp" alt="Image d'un ordinateur avec des icônes représentant differents langages informatiques">
-                </div> -->
+            <div id="lineTwo">
+                <p>Développeur web & web mobile</p>
             </div>
+
             <div id="scrollIconContainer" class="flexCenter">
                 <svg id="fingerScroll" version="1.0" xmlns="http://www.w3.org/2000/svg" width="50%" height="auto" viewBox="0 0 30.000000 34.000000" preserveAspectRatio="xMidYMid meet">
                     <g transform="translate(0.000000,34.000000) scale(0.100000,-0.100000)" fill="whitesmoke" stroke="none">
@@ -126,6 +154,7 @@ if (!empty($_POST)) {
                     </g>
                 </svg>
             </div>
+
         </div>
         <!-- PRESENTATION SECTION -->
         <div id="presentationSection" class="flexCenter">
@@ -264,30 +293,30 @@ if (!empty($_POST)) {
                 </form>
             </div>
 
+            <div class="footerContainer flexAround">
+                <div id="contactEmail" class="footerLink">
+                    <a href="mailto:stephan.canioni@outlook.fr" class="footerText">
+                        <i class="fa-solid fa-at"></i> stephan.canioni@outlook.fr
+                    </a>
+                </div>
+                <div id="contactTel" class="footerLink">
+                    <p class="footerText">
+                        <i class="fa-solid fa-phone"></i> 06.69.15.04.73
+                    </p>
+                </div>
+                <div id="contactLinkedIn" class="footerLink">
+                    <a class="footerText" href="https://www.linkedin.com/in/stephan-canioni-574932204/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i> Mon LinkedIn
+                    </a>
+                </div>
+                <div id="contactGitHub" class="footerLink">
+                    <a class="footerText" href="https://github.com/Canioni-S" target="_blank">
+                        <i class="fa-brands fa-github"></i> Mon GitHub
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <footer class="footerContainer flexAround">
-            <div id="contactEmail" class="footerLink">
-                <a href="mailto:stephan.canioni@outlook.fr" class="footerText">
-                    <i class="fa-solid fa-at"></i> stephan.canioni@outlook.fr
-                </a>
-            </div>
-            <div id="contactTel" class="footerLink">
-                <p class="footerText">
-                    <i class="fa-solid fa-phone"></i> 06.69.15.04.73
-                </p>
-            </div>
-            <div id="contactLinkedIn" class="footerLink">
-                <a class="footerText" href="https://www.linkedin.com/in/stephan-canioni-574932204/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i> Mon LinkedIn
-                </a>
-            </div>
-            <div id="contactGitHub" class="footerLink">
-                <a class="footerText" href="https://github.com/Canioni-S" target="_blank">
-                    <i class="fa-brands fa-github"></i> Mon GitHub
-                </a>
-            </div>
-        </footer>
 
     </div>
     <script src="../script.js"></script>

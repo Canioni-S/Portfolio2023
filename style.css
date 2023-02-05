@@ -74,7 +74,7 @@ a {
 }
 
 /* ADD ANCHOR AND SPACE FOR NAVBAR ON TOP OF EACH SECTION */
-#presentationSectionAnchor {
+/* #presentationSectionAnchor {
     height: 25vh;
     background: linear-gradient(rgba(0, 0, 0, 0.8), whitesmoke);
 }
@@ -87,7 +87,7 @@ a {
 #contactSectionAnchor {
     height: 25vh;
     background: linear-gradient(rgba(0, 0, 0, 0.1), whitesmoke);
-}
+} */
 
 #mainContainer {
     display: flex;
@@ -98,12 +98,11 @@ a {
 
 /* NAVBAR */
 #navBar {
-    position: sticky;
+    position: fixed;
     display: flex;
     flex-direction: column;
     top: 0px;
     width: 100%;
-    /* height: auto; */
     background-color: whitesmoke;
     border-bottom: 1.5px solid black;
     z-index: 99;
@@ -200,50 +199,205 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     flex-direction: column;
     width: 100%;
-    min-height: 90vh;
+    min-height: 100vh;
+    background: linear-gradient(black, whitesmoke);
 }
 
-/* FRONT */
-#homeFrontContainer {
+#homeBG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+#fullNameContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     z-index: 50;
 }
 
-.homeFrontText {
+.fullName {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
     width: 90%;
 }
 
-#homeImgContainer {
-    display: none;
-    width: 45%;
-}
-
-#homeFrontImg {
-    width: 100%;
-}
-
-#lineOne {
-    font-size: calc(15px + 2.5vw);
+#firstName, #lastName {
+    display: flex;
+    justify-content: center;
+    font-size: calc(20px + 5vw);
     color: whitesmoke;
+}
+
+.letterContainers {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stars {
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 7px white,
+        0 0 10px white,
+        0 0 21px white,
+        0 0 42px white,
+        0 0 82px white,
+        0 0 92px white,
+        0 0 102px white,
+        0 0 151px white;
+    background-image: radial-gradient(white, rgba(255, 255, 255, 0.5));
+}
+
+.star-s {
+    animation: shootingStars 2s;
+}
+
+.letter-s {
+    text-transform: uppercase;
+    animation: letterAppear 2s;
+}
+
+.star-t {
+    animation: shootingStars 5s;
+}
+
+.letter-t {
+    animation: letterAppear 5s;
+}
+
+.star-é {
+    animation: shootingStars 4s;
+}
+
+.letter-é {
+    animation: letterAppear 4s;
+}
+
+.star-p {
+    animation: shootingStars 3.5s;
+}
+
+.letter-p {
+    animation: letterAppear 3.5s;
+}
+
+.star-h {
+    animation: shootingStars 2.5s;
+}
+
+.letter-h {
+    animation: letterAppear 2.5s;
+}
+
+.star-a {
+    animation: shootingStars 5s;
+}
+
+.letter-a {
+    animation: letterAppear 5s;
+}
+
+.star-n {
+    animation: shootingStars 4.5s;
+}
+
+.letter-n {
+    animation: letterAppear 4.5s;
+}
+
+.star-c {
+    animation: shootingStars 3.5s;
+}
+
+.letter-c {
+    text-transform: uppercase;
+    animation: letterAppear 3.5s;
+}
+
+.star-i {
+    animation: shootingStars 4.8s;
+}
+
+.letter-i {
+    animation: letterAppear 4.8s;
+}
+
+.star-o {
+    animation: shootingStars 2.2s;
+}
+
+.letter-o {
+    animation: letterAppear 2.2s;
+}
+
+@keyframes shootingStars {
+    0% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    20% {
+        top: -500%;
+        opacity: 1;
+        width: 5px;
+        height: 15px;
+    }
+
+    80% {
+        top: 50%;
+        width: 5px;
+        height: 15px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 50%;
+        opacity: 1;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@keyframes letterAppear {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
 }
 
 #lineTwo {
-    font-size: calc(25px + 5vw);
-    color: whitesmoke;
-}
-
-#lineThree {
     font-size: calc(20px + 3.5vw);
     color: orangered;
+    z-index: 50;
 }
 
 #scrollIconContainer {
     width: 40%;
+    z-index: 50;
 }
 
 #fingerScroll {
@@ -287,64 +441,14 @@ a {
     }
 }
 
-/* BACKGROUND CREATION AND ANIMATION */
-.homeBackground {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.logoContainer {
-    position: absolute;
-    height: 50%;
-    overflow: hidden;
-}
-
-/* ANIMATION'S KEYFRAME LOGO BACKGROUND */
-
-#logoHtml {
-    animation: animHtml 60s infinite ease;
-}
-
-#logoCss {
-    animation: animCss 60s infinite ease-in;
-}
-
-#logoJs {
-    animation: animJs 60s infinite ease-out;
-}
-
-#logoPhp {
-    animation: animPhp 60s infinite linear;
-}
-
-#logoMySql {
-    animation: animMySql 60s infinite ease;
-}
-
-#logoBootstrap {
-    animation: animBootstrap 60s infinite ease-in-out;
-}
-
-#logoWordPress {
-    animation: animWordPress 60s infinite ease-in;
-}
-
-.homeBackgroundImg {
-    opacity: 5%;
-    width: 25vw;
-}
-
 /* PRESENTATION SECTION */
 
 #presentationSection {
     position: relative;
     flex-direction: column;
-    background-color: whitesmoke;
+    background: linear-gradient(rgba(0 ,0, 0, 0.1), whitesmoke);
     width: 100%;
+    min-height: 100vh;
 }
 
 .slideshowContainer {
@@ -509,8 +613,8 @@ a {
     position: relative;
     flex-direction: column;
     width: 100%;
-    min-height: 80vh;
-    background-color: rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    background: linear-gradient(whitesmoke, rgba(0, 0, 0, 0.1));
 }
 
 .flipCardsContainer {
@@ -570,11 +674,11 @@ a {
 /* CONTACT SECTION */
 
 #contactSection {
-    min-height: 92vh;
-    background-color: whitesmoke;
     position: relative;
     flex-direction: column;
     width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), whitesmoke);
 }
 
 #formContainer {
