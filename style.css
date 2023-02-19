@@ -73,22 +73,6 @@ a {
     content: "Contact";
 }
 
-/* ADD ANCHOR AND SPACE FOR NAVBAR ON TOP OF EACH SECTION */
-/* #presentationSectionAnchor {
-    height: 25vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), whitesmoke);
-}
-
-#workSectionAnchor {
-    height: 25vh;
-    background: linear-gradient(whitesmoke, rgba(0, 0, 0, 0.1));
-}
-
-#contactSectionAnchor {
-    height: 25vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), whitesmoke);
-} */
-
 #mainContainer {
     display: flex;
     flex-direction: column;
